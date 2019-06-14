@@ -8,7 +8,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
   </a>
   <a href="https://github.com/marcusnewton1/unfold/blob/master/LICENSE">
-    <img alt="License: GPL-3.0" src="https://img.shields.io/badge/License-GPL-3.0-yellow.svg" target="_blank" />
+    <img alt="License: GPL-3.0" src="https://img.shields.io/github/license/marcusnewton1/unfold.svg?color=blue target="_blank" />
   </a>
 </p>
 
