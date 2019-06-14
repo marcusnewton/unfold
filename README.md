@@ -1,6 +1,8 @@
 <h1 align="center">unfold</h1>
 <p>
-  <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/marcusnewton1/unfold/releases">
+    <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" target="_blank" />
+  </a>
   <a href="https://github.com/marcusnewton1/unfold#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
   </a>
