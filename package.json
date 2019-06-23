@@ -2,9 +2,12 @@
   "name": "unfold",
   "version": "0.0.1",
   "description": "Framework for self-assembling web UIs",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public --single",
+    "start:dev": "sirv public --single --dev"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,23 @@
   },
   "homepage": "https://github.com/marcusnewton1/unfold#readme",
   "contributors": [
-    "Marcus Newton <marcus.newton@hotmail.com>"
-  ]
+    "Marcus Newton <marcus.newton@hotmail.com>",
+    "Nathan Waters <nathan@nathanwaters.com>"
+  ],
+  "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.3.1",
+    "sirv-cli": "^0.4.4",
+    "svelte-apollo": "^0.3.0"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rollup": "^1.10.1",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "svelte": "^3.0.0"
+  }
 }
