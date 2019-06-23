@@ -1,11 +1,19 @@
 <script context="module">
   export const c_gql = `
-    {
-      comment {
+    fragment Comment on post {
+      comments {
+        uuid
         text
+        author {
+          name
+        }
       }
     }
 `;
 </script>
 
-<h1>Comments</h1>
+<script>
+  export let data;
+</script>
+
+<p>{data.text}</p>
