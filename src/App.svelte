@@ -1,6 +1,7 @@
 <script>
   import ApolloClient, { gql } from "apollo-boost";
   import { query, setClient } from "svelte-apollo";
+
   import Post, { p_gql } from "./components/Post.svelte";
   import Comment, { c_gql } from "./components/Comment.svelte";
   const client = new ApolloClient({
@@ -18,20 +19,26 @@
   const data = query(client, {
     query: gql(queryQL)
   });
+  console.log(JSON.stringify(data.result));
 </script>
 
-<section>
-  <ul>
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+</svelte:head>
+
+<section class="section">
+  <div class="container">
     {#await $data}
-      <li>Loading...</li>
+      <p>Loading...</p>
     {:then result}
-       {JSON.stringify(result.data)}
       <Post data={result.data.post[0]} />
       {#each result.data.post[0].comments as comment (comment.uuid)}
         <Comment data={comment} />
       {/each}
     {:catch error}
-      <li>Error loading posts: {error}</li>
+      <p>Error loading posts: {error}</p>
     {/await}
-  </ul>
+  </div>
 </section>

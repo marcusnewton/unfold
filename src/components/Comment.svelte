@@ -14,4 +14,10 @@
   export let data;
 </script>
 
-<p>{data.text}</p>
+<div class="content box">
+  <p>
+    <strong>{data.author.name}</strong>
+    <br />
+     {data.text}
+  </p>
+</div>
