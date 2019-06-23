@@ -7,15 +7,14 @@
     uri: "https://unfold-gql.herokuapp.com/v1/graphql"
   });
   setClient(client);
-  const queryQL = `{
+  const queryQL = `
+    {
       post(where: {uuid: {_eq: "35c96e5b-e5a5-4cf0-ac27-27c684864aca"}}) {
-        ...Post
-        ...Comment
+        ${p_gql}
+        ${c_gql}
       }
     }
-    ${p_gql}
-    ${c_gql}
-    `;
+  `;
   const data = query(client, {
     query: gql(queryQL)
   });

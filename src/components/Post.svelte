@@ -1,11 +1,9 @@
 <script context="module">
   export const p_gql = `
-    fragment Post on post {
-      title
-      date
-      body
-    }
-`;
+    title
+    date
+    body
+  `;
 </script>
 
 <script>
