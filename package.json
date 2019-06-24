@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcusnewton1/unfold.git"
+    "url": "git+https://github.com/marcusnewton/unfold.git"
   },
   "keywords": [
     "holochain",
@@ -21,9 +21,9 @@
   ],
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/marcusnewton1/unfold/issues"
+    "url": "https://github.com/marcusnewton/unfold/issues"
   },
-  "homepage": "https://github.com/marcusnewton1/unfold#readme",
+  "homepage": "https://github.com/marcusnewton/unfold#readme",
   "contributors": [
     "Marcus Newton <marcus.newton@hotmail.com>",
     "Nathan Waters <nathan@nathanwaters.com>"
@@ -36,6 +36,8 @@
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "prettier-plugin-svelte": "^0.6.0",
     "rollup": "^1.10.1",
     "rollup-plugin-commonjs": "^9.3.4",
     "rollup-plugin-livereload": "^1.0.0",
