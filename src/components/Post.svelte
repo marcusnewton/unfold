@@ -10,4 +10,8 @@
   export let data;
 </script>
 
-<h1>{data.title}</h1>
+<div class="box">
+  <h1 class="title">{data.title}</h1>
+  <h2 class="subtitle">{data.date}</h2>
+  <div class="block">{data.body}</div>
+</div>
